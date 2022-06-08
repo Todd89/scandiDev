@@ -1,0 +1,67 @@
+
+
+.header-block{
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.header-block-categories{
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  font-style: 16;
+  font-weight: 600;
+}
+
+.header-block-categories_text-block{
+  height: 100%;
+}
+
+.header-block-categories_text{
+  display: block;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+.header-block-categories_text:active{
+  color: #5ECE7B;
+  border-bottom: 2px solid #5ECE7B;
+}
+
+
+.header-block-img{
+  width: 30px;
+  height: 30px;
+  background: url('/public/assets/svg/central_pic.png') no-repeat center/ cover;
+}
+
+.header-block-settings{
+  margin-right: 60px;
+  width: 8vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.header-block-settings_dollad-img{
+  width: 37px;
+  height: 37px;
+  background: url('/public/assets/svg/dollar.png') no-repeat center/ cover;
+}
+
+.header-block-settings_bag-img{
+  width: 25px;
+  height: 25px;
+  background: url('/public/assets/svg/bag.png') no-repeat center/ contain;
+}
