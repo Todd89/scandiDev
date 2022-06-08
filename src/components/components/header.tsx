@@ -11,13 +11,34 @@ class Header extends Component<THeader> {
       <header className="header-block">
         <nav className="header-block-categories">
           <div className="header-block-categories_text-block">
-            <span className="header-block-categories_text">All</span>
+            <span
+              className="header-block-categories_text"
+              onClick={(e) =>
+                this.props.changeCategoryName((e.target as HTMLSpanElement).innerText)
+              }
+            >
+              all
+            </span>
           </div>
           <div className="header-block-categories_text-block">
-            <span className="header-block-categories_text">clothes</span>
+            <span
+              onClick={(e) =>
+                this.props.changeCategoryName((e.target as HTMLSpanElement).innerText)
+              }
+              className="header-block-categories_text"
+            >
+              clothes
+            </span>
           </div>
           <div className="header-block-categories_text-block">
-            <span className="header-block-categories_text">Tech</span>
+            <span
+              onClick={(e) =>
+                this.props.changeCategoryName((e.target as HTMLSpanElement).innerText)
+              }
+              className="header-block-categories_text"
+            >
+              tech
+            </span>
           </div>
         </nav>
         <div className="header-block-img"></div>

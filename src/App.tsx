@@ -9,14 +9,22 @@ import ErrorRoute from './components/pages/errorPage/errorPage';
 import { TAppState } from './interface/types';
 
 class App extends Component {
+  constructor(props: string) {
+    super(props);
+    this.changeCategoryName = this.changeCategoryName.bind(this);
+  }
+
   state = {
     categoryName: 'all',
   };
+
   changeCategoryName(name: string) {
+    console.log(name);
     this.setState((state: TAppState) => {
-      return (state.categoryName = name);
+      return { ...state, categoryName: name };
     });
   }
+
   render() {
     return (
       <HashRouter>
